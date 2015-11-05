@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testSuite suiteName="HL7" xmlns="http://www.ibm.com/xmlns/dfdl/testData" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/" 
+   xmlns:tdml="http://www.ibm.com/xmlns/dfdl/testData"
+   xmlns:hl7="urn:hl7-org:v2xml">
+
+  <tdml:parserTestCase name="hl7-1" root="HL7" model="GenericHL7.xsd" description="hl7 test">
+    <tdml:document>
+      <tdml:documentPart type="file">A01.txt</tdml:documentPart>
+    </tdml:document>
+    <tdml:infoset>
+      <tdml:dfdlInfoset>
+        <hl7:HL7/>
+      </tdml:dfdlInfoset>
+    </tdml:infoset>
+  </tdml:parserTestCase>
+</testSuite>
+      
